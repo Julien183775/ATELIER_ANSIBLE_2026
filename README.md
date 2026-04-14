@@ -90,27 +90,46 @@ Faites preuve de pédagogie et soyez clair dans vos explications et procedures d
 **Question 1 :**  
 Pourquoi Ansible est-il qualifié d’outil "déclaratif" ?    
   
-*..Répondez à cet exercice ici..*
+*Ansible est qualifié d’outil déclaratif car on décrit l’état final souhaité du système (par exemple : « nginx doit être installé et démarré »), et non les étapes pour y parvenir.
+C’est Ansible qui se charge de déterminer et d’exécuter les actions nécessaires pour atteindre cet état.
+À l’inverse, un script bash est impératif : on y définit chaque commande à exécuter dans un ordre précis.*
 
 **Question 2 :**  
 Pourquoi l’utilisation de variables est-elle essentielle dans un playbook ?  
   
-*..Répondez à cet exercice ici..*
+*Les variables permettent de rendre un playbook réutilisable et adaptable sans modifier sa structure.
+Elles facilitent la maintenance en évitant de répéter les mêmes valeurs et permettent d’adapter facilement le déploiement à différents environnements (développement, test, production).
+Ainsi, seule la valeur des variables change, pas la logique du playbook.*
 
 **Question 3 :**  
 En quoi Ansible facilite-t-il la gestion de plusieurs serveurs ?  
   
-*..Répondez à cet exercice ici..*
+*Ansible permet d’exécuter un même playbook sur plusieurs serveurs en parallèle grâce à un fichier d’inventaire (inventory.ini).
+Cela permet d’automatiser la configuration de plusieurs machines en une seule commande, tout en garantissant une configuration homogène.
+Sans Ansible, il faudrait se connecter manuellement à chaque serveur et répéter les mêmes opérations.*
 
 **Question 4 :**  
 Quels sont les avantages et les limites d’Ansible dans un contexte DevOps ?   
   
-*..Répondez à cet exercice ici..*
+*Avantages :
+
+Facile à apprendre et à utiliser
+Pas besoin d’agent sur les serveurs
+Automatisation rapide et reproductible
+Lisible grâce aux fichiers YAML
+
+Limites :
+
+Peut être moins performant sur un grand nombre de serveurs
+Gestion de dépendances parfois complexe
+Moins adapté aux très grandes infrastructures que certains autres outils*
   
 **Question 5 :**  
 Quelle est la différence entre les modules copy et template dans Ansible ?   
   
-*..Répondez à cet exercice ici..*
+*Le module copy permet de copier un fichier tel quel sur un serveur.
+Le module template permet de copier un fichier en remplaçant des variables (comme {{ variable }}) par leurs valeurs.
+Ainsi, template permet de créer des fichiers dynamiques, contrairement à copy qui est statique.*
 
 ---------------------------------------------------
 Séquence 5 : Atelier  
