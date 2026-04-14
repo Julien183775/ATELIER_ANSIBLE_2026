@@ -111,18 +111,16 @@ Sans Ansible, il faudrait se connecter manuellement à chaque serveur et répét
 **Question 4 :**  
 Quels sont les avantages et les limites d’Ansible dans un contexte DevOps ?   
   
-*Avantages :
+**Avantages :**
+- Facile à apprendre et à utiliser
+- Pas besoin d'agent sur les serveurs
+- Automatisation rapide et reproductible
+- Lisible grâce aux fichiers YAML
 
-Facile à apprendre et à utiliser
-Pas besoin d’agent sur les serveurs
-Automatisation rapide et reproductible
-Lisible grâce aux fichiers YAML
-
-Limites :
-
-Peut être moins performant sur un grand nombre de serveurs
-Gestion de dépendances parfois complexe
-Moins adapté aux très grandes infrastructures que certains autres outils*
+**Limites :**
+- Peut être moins performant sur un grand nombre de serveurs
+- Gestion de dépendances parfois complexe
+- Moins adapté aux très grandes infrastructures que certains autres outils (ex: Terraform)
   
 **Question 5 :**  
 Quelle est la différence entre les modules copy et template dans Ansible ?   
